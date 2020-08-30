@@ -5,7 +5,7 @@ const Navbar = props => {
   const { className } = props;
   return (
     <nav className={className}>
-      <span className="logo">Sangjun Lee</span>
+      <span className="logo">SL</span>
       <ul className="nav-items">
         <li className="nav-item">About</li>
         <li className="nav-item">Projects</li>
@@ -15,24 +15,31 @@ const Navbar = props => {
 };
 
 export default styled(Navbar)`
-  font-size: 1.2em;
+  position: absolute;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 2;
   .logo {
+    color: white;
+    font-size: 1.5em;
+    font-family: "Monoton", cursive;
     margin-left: 1rem;
+    user-select: none;
   }
   .nav-items {
     display: flex;
     float: right;
     .nav-item {
-      padding: 1rem 2rem;
-      color: lightgray;
+      color: white;
+      font-size: 0.9em;
+      font-family: "Open Sans", sans-serif;
+      padding: 0.8rem 2rem;
       border-bottom: 2px solid transparent;
-      transition: all 200ms ease-in-out;
+      transition: all 300ms ease-in-out;
       &:hover {
-        color: gray;
-        border-bottom: 2px solid gray;
+        border-bottom: 2px solid lightgray;
         cursor: pointer;
       }
     }
