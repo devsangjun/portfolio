@@ -10,4 +10,8 @@ export default createGlobalStyle`
     list-style: none;
     user-select: none;
   }
+  .section-header {
+    font-size: 2em;
+    font-weight: lighter;
+  }
 `;

@@ -9,6 +9,7 @@ const Navbar = props => {
       <ul className="nav-items">
         <li className="nav-item">About</li>
         <li className="nav-item">Projects</li>
+        <li className="nav-item">Blog</li>
       </ul>
     </nav>
   );
@@ -25,7 +26,7 @@ export default styled(Navbar)`
     color: white;
     font-size: 1.5em;
     font-family: "Monoton", cursive;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
     user-select: none;
   }
   .nav-items {

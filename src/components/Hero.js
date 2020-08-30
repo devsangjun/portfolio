@@ -31,6 +31,7 @@ export default styled(Hero)`
       font-size: 3em;
       font-weight: bold;
       font-family: "Open Sans", sans-serif;
+      text-align: center;
     }
     .msg-content {
       margin-top: 1rem;
