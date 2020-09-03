@@ -10,6 +10,10 @@ export default createGlobalStyle`
     list-style: none;
     user-select: none;
   }
+  a {
+    text-decoration: none;
+    color: black;
+  }
   .section-header {
     font-size: 2em;
     font-weight: lighter;
