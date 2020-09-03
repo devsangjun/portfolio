@@ -33,18 +33,20 @@ const ProjectCard = props => {
           </span>
         )}
       </div>
-      <div className="project-links">
-        <a href={codeLink}>
-          <VscCode className="link-icon" />
-        </a>
-        {serverLink && (
-          <a href={serverLink}>
-            <VscServer className="link-icon" />
+      <div className="project-btm-container">
+        <div className="project-links">
+          <a href={codeLink}>
+            <VscCode className="link-icon" />
           </a>
-        )}
-        <a href={runLink}>
-          <VscDebugStart className="link-icon" />
-        </a>
+          {serverLink && (
+            <a href={serverLink}>
+              <VscServer className="link-icon" />
+            </a>
+          )}
+          <a href={runLink}>
+            <VscDebugStart className="link-icon" />
+          </a>
+        </div>
       </div>
     </div>
   );

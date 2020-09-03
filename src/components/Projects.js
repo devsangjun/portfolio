@@ -76,7 +76,6 @@ const Projects = props => {
 
 export default styled(Projects)`
   padding: 1.5rem 2rem;
-  background-color: #f5f5f7;
   .project-cards {
     display: flex;
     flex-wrap: wrap;

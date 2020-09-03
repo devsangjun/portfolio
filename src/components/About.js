@@ -9,11 +9,13 @@ const About = props => {
       <h2 className="section-header">About</h2>
       <div className="info-container">
         <div className="info-item info-interests">
-          <h3 className="info-header">Skills</h3>
-          <ul>
-            <li>React</li>
-            <li>Node.js</li>
-          </ul>
+          <p className="info-content">
+            &emsp;&emsp;Over the course of working on personal projects, I've
+            always aimed at creating well functioning and attractive
+            applications. I take each step meticulously from selecting theme
+            colors to designing icons. I make sure every component serves its
+            purpose and remove any extraneous decorations.
+          </p>
         </div>
         <div className="info-item info-skills">
           <h3 className="info-header">Interests</h3>
@@ -47,6 +49,11 @@ export default styled(About)`
       .info-header {
         font-size: 1.5em;
         font-weight: 500;
+      }
+      .info-content {
+        text-align: justify;
+        font-size: 1.1em;
+        line-height: 1.8em;
       }
     }
     /* .info-interests {
