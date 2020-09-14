@@ -17,5 +17,6 @@ export default createGlobalStyle`
   .section-header {
     font-size: 2em;
     font-weight: lighter;
+    text-align: center;
   }
 `;

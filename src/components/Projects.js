@@ -75,7 +75,7 @@ const Projects = props => {
 };
 
 export default styled(Projects)`
-  padding: 1.5rem 2rem;
+  padding: 2rem 1.5rem 4rem 1.5rem;
   .project-cards {
     display: flex;
     flex-wrap: wrap;
