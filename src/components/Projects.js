@@ -6,6 +6,7 @@ import AboutTimerFavicon from "../images/about_timer_favicon.png";
 import WeatherOrNotFavicon from "../images/weather_or_not_favicon.png";
 import MoogleFavicon from "../images/moogle_favicon.png";
 import TLDRFavicon from "../images/tldr_favicon.png";
+import LockeyFavicon from "../images/lockey_favicon.png";
 
 const data = [
   {
@@ -31,7 +32,7 @@ const data = [
     description:
       "Search for weathers in cities and save them to your Favorites.",
     date: "MAY 2020",
-    skills: ["React", "Redux"],
+    skills: ["React", "Redux", "Node"],
     favicon: WeatherOrNotFavicon,
     codeLink: "https://github.com/ohyeyoye/weather-or-not",
     serverLink: "https://github.com/ohyeyoye/weather-or-not-server",
@@ -41,7 +42,7 @@ const data = [
     title: "Moogle",
     description: 'No more Googling. Just "moogle" movies for a brief synopsis.',
     date: "MAY 2020",
-    skills: ["React", "Redux"],
+    skills: ["React", "Redux", "Node"],
     favicon: MoogleFavicon,
     codeLink: "https://github.com/ohyeyoye/moogle",
     serverLink: "https://github.com/ohyeyoye/moogle-server",
@@ -51,11 +52,20 @@ const data = [
     title: "TL;DR",
     description: "Create a personal Markdown blog online.",
     date: "JUN 2020",
-    skills: ["React", "Redux"],
+    skills: ["React", "Redux", "Node"],
     favicon: TLDRFavicon,
     codeLink: "https://github.com/ohyeyoye/tldr",
     serverLink: "https://github.com/ohyeyoye/tldr-server",
     runLink: "https://ohyeyoye.github.io/tldr",
+  },
+  {
+    title: "Lockey",
+    description:
+      "Save your passwords in your web vault. (Secured with encryption with your secret master password)",
+    date: "OCT 2020",
+    skills: ["React", "Redux", "Firebase Auth & DB"],
+    favicon: LockeyFavicon,
+    runLink: "https://lockey-d41ff.web.app/",
   },
 ];
 

@@ -11,11 +11,11 @@ const About = props => {
         <div className="info-item">
           <h3 className="info-header">Design & Build</h3>
           <p className="info-content">
-            &emsp;&emsp;Over the course of working on personal projects, I've
-            always aimed at creating well functioning and attractive
-            applications. I take each step meticulously from selecting theme
-            colors to designing icons. I make sure every component serves its
-            purpose and remove any extraneous decorations.
+            &emsp;&emsp;Over the course of working on numerous personal
+            projects, I've always aimed at creating well functioning and
+            attractive applications. I take each step meticulously from
+            selecting theme colors to designing icons. I make sure every
+            component serves its purpose and remove any extraneous decorations.
           </p>
         </div>
         <div className="info-item">
@@ -39,6 +39,19 @@ const About = props => {
                 <li>
                   Servers that allow registration and authorization of users
                   using MongoDB
+                </li>
+              </ul>
+            </li>
+            <li className="skill-item">
+              <h4>Firebase</h4>
+              <ul>
+                <li>
+                  Web applications that require secure and reliable
+                  authentication.
+                </li>
+                <li>
+                  Web applications with Firebase Realtime Database that syncs
+                  data instantaneously.
                 </li>
               </ul>
             </li>

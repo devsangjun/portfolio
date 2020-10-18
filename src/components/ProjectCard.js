@@ -7,6 +7,7 @@ const ProjectCard = props => {
     title,
     description,
     date,
+    skills,
     favicon,
     codeLink,
     serverLink,
@@ -34,10 +35,19 @@ const ProjectCard = props => {
         )}
       </div>
       <div className="project-btm-container">
-        <div className="project-links">
-          <a href={codeLink}>
-            <VscCode className="link-icon" />
-          </a>
+        <ul className="skills-list">
+          {skills.map((skill, index) => (
+            <li key={index} className="skill-item">
+              #{skill}{" "}
+            </li>
+          ))}
+        </ul>
+        <ul className="project-links">
+          {codeLink && (
+            <a href={codeLink}>
+              <VscCode className="link-icon" />
+            </a>
+          )}
           {serverLink && (
             <a href={serverLink}>
               <VscServer className="link-icon" />
@@ -46,7 +56,7 @@ const ProjectCard = props => {
           <a href={runLink}>
             <VscDebugStart className="link-icon" />
           </a>
-        </div>
+        </ul>
       </div>
     </div>
   );
@@ -68,6 +78,7 @@ export default styled(ProjectCard)`
       font-size: 0.75em;
     }
   }
+
   .project-favicon {
     position: absolute;
     top: 1rem;
@@ -96,11 +107,28 @@ export default styled(ProjectCard)`
       color: lightcoral;
     }
   }
+  .project-btm-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid lightgray;
+    .skills-list {
+      margin-left: 1rem;
+      color: gray;
+      display: flex;
+      .skill-item {
+        font-size: 0.8em;
+        margin-right: 0.5rem;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
   .project-links {
     padding: 1rem;
     text-align: right;
     font-size: 1.5em;
-    border-top: 1px solid lightgray;
     a {
       margin-right: 1rem;
       &:last-child {
