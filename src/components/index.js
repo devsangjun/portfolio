@@ -1,6 +1,6 @@
 import Navbar from "./Navbar";
 import Hero from "./Hero";
-import About from "./About";
+import MySkills from "./MySkills";
 import Projects from "./Projects";
 import Footer from "./Footer";
-export { Navbar, Hero, About, Projects, Footer };
+export { Navbar, Hero, MySkills, Projects, Footer };

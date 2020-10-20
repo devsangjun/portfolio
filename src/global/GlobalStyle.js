@@ -16,7 +16,9 @@ export default createGlobalStyle`
   }
   .section-header {
     font-size: 2em;
-    font-weight: lighter;
-    text-align: center;
   }
+  .shadow {
+    box-shadow: 0.125rem 0.125rem 0.5rem rgba(0, 0, 0, 0.2);
+  }
+
 `;

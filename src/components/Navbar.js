@@ -1,47 +1,70 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-scroll";
 
 const Navbar = props => {
   const { className } = props;
   return (
-    <nav className={className}>
-      <span className="logo">SL</span>
+    <nav className={`${className} limit-width`} id="nav-bar">
+      <div className="logo">
+        <span className="logo-name">SANGJUN LEE</span>
+        <span className="logo-description">
+          Web Developer from Los Angeles, CA
+        </span>
+      </div>
       <ul className="nav-items">
-        <li className="nav-item">About</li>
-        <li className="nav-item">Projects</li>
-        <li className="nav-item">Blog</li>
+        <li className="nav-item">
+          <Link className="link" to="my-skills">
+            My Skills
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link className="link" to="my-works">
+            My Works
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link className="link" to="contact">
+            Contact
+          </Link>
+        </li>
       </ul>
     </nav>
   );
 };
 
 export default styled(Navbar)`
-  position: absolute;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 2;
+  padding: 1rem;
   .logo {
-    color: white;
-    font-size: 1.5em;
-    font-family: "Monoton", cursive;
-    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
     user-select: none;
+    .logo-name {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    .logo-description {
+    }
   }
   .nav-items {
     display: flex;
     float: right;
     .nav-item {
-      color: white;
-      font-size: 0.9em;
-      font-family: "Open Sans", sans-serif;
-      padding: 0.8rem 2rem;
+      font-size: 1em;
+      font-weight: bold;
       border-bottom: 2px solid transparent;
       transition: all 300ms ease-in-out;
-      &:hover {
-        border-bottom: 2px solid lightgray;
-        cursor: pointer;
+      .link {
+        color: #1e8dff;
+        padding: 0.8rem 1rem;
+        &:hover {
+          border-bottom: 2px solid #1e8dff;
+          cursor: pointer;
+        }
       }
     }
   }

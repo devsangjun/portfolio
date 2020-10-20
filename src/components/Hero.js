@@ -1,14 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-import HeroImage from "../images/hero.jpg";
+import HeroImage from "../images/hero.png";
 const Hero = props => {
   const { className } = props;
   return (
-    <div className={className}>
+    <div className={`${className} limit-width`}>
+      <img className="hero-img" src={HeroImage} alt="hero" />
       <div className="hero-msg">
-        <h2 className="msg-header">HI, I'M SANGJUN.</h2>
+        <h2 className="msg-header">Design & Develop</h2>
         <p className="msg-content">
-          I create web applications from start to end.
+          I build stunning and well-functioning web applications from top to
+          bottom.
         </p>
       </div>
     </div>
@@ -17,26 +19,28 @@ const Hero = props => {
 
 export default styled(Hero)`
   position: relative;
-  height: 30rem;
-  background: url(${HeroImage}) no-repeat center center;
-  background-size: cover;
-  color: white;
-  z-index: 1;
+  height: 35rem;
+  .hero-img {
+    opacity: 0.4;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    max-width: 40rem;
+  }
   .hero-msg {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 7rem;
+    left: 2rem;
     .msg-header {
       font-size: 3em;
       font-weight: bold;
-      font-family: "Open Sans", sans-serif;
       text-align: center;
     }
     .msg-content {
       margin-top: 1rem;
       font-size: 1.4em;
-      font-family: "PT Serif", serif;
+      width: 26rem;
+      text-align: center;
     }
   }
 `;

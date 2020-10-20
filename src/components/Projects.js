@@ -1,71 +1,71 @@
 import React from "react";
 import styled from "styled-components";
 import ProjectCard from "./ProjectCard";
-import BinderFavicon from "../images/binder_favicon.png";
-import AboutTimerFavicon from "../images/about_timer_favicon.png";
-import WeatherOrNotFavicon from "../images/weather_or_not_favicon.png";
-import MoogleFavicon from "../images/moogle_favicon.png";
-import TLDRFavicon from "../images/tldr_favicon.png";
-import LockeyFavicon from "../images/lockey_favicon.png";
 
 const data = [
   {
     title: "Binder",
+    summary: "To-do-list App",
     description: "Create a to-do-list and have it stored locally.",
     date: "JUL 2019",
     skills: ["React", "Redux"],
-    favicon: BinderFavicon,
     codeLink: "https://github.com/ohyeyoye/binder",
     runLink: "https://ohyeyoye.github.io/binder",
+    color: "#F89BA5",
   },
   {
     title: "AboutTimer",
+    summary: "Multi-timers",
     description: "Set multiple timers and run them simultaneously.",
     date: "AUG 2019",
     skills: ["React", "Redux"],
-    favicon: AboutTimerFavicon,
     codeLink: "https://github.com/ohyeyoye/about-timer",
     runLink: "https://ohyeyoye.github.io/about-timer",
+    color: "#8640F8",
   },
   {
     title: "Weather Or Not",
+    summary: "Weather App",
     description:
       "Search for weathers in cities and save them to your Favorites.",
     date: "MAY 2020",
     skills: ["React", "Redux", "Node"],
-    favicon: WeatherOrNotFavicon,
     codeLink: "https://github.com/ohyeyoye/weather-or-not",
     serverLink: "https://github.com/ohyeyoye/weather-or-not-server",
     runLink: "https://ohyeyoye.github.io/weather-or-not",
+    color: "#55AAFF",
   },
   {
     title: "Moogle",
+    summary: "Movie Search Engine",
     description: 'No more Googling. Just "moogle" movies for a brief synopsis.',
     date: "MAY 2020",
     skills: ["React", "Redux", "Node"],
-    favicon: MoogleFavicon,
     codeLink: "https://github.com/ohyeyoye/moogle",
     serverLink: "https://github.com/ohyeyoye/moogle-server",
     runLink: "https://ohyeyoye.github.io/moogle",
+    color: "#3F35E2",
   },
   {
     title: "TL;DR",
+    summary: "Personal Blog",
     description: "Create a personal Markdown blog online.",
     date: "JUN 2020",
     skills: ["React", "Redux", "Node"],
-    favicon: TLDRFavicon,
     codeLink: "https://github.com/ohyeyoye/tldr",
     serverLink: "https://github.com/ohyeyoye/tldr-server",
     runLink: "https://ohyeyoye.github.io/tldr",
+    color: "#FF8D38",
   },
   {
     title: "Lockey",
+    summary: "Password Vault",
     description:
-      "Save your passwords in your web vault. (Secured with encryption with your secret master password)",
+      "Save your passwords in your web vault with a master password that auto-locks every 3 minutes.",
     date: "OCT 2020",
     skills: ["React", "Redux", "Firebase Auth & DB"],
-    favicon: LockeyFavicon,
     runLink: "https://lockey-d41ff.web.app/",
+    color: "#005CE6",
   },
 ];
 
@@ -73,8 +73,8 @@ const Projects = props => {
   const { className } = props;
 
   return (
-    <div className={className}>
-      <h2 className="section-header">Projects</h2>
+    <div className={`${className} limit-width`} id="my-works">
+      <h2 className="section-header">My Works</h2>
       <div className="project-cards">
         {data.map((project, index) => (
           <ProjectCard className="project-card" key={index} {...project} />
@@ -85,19 +85,12 @@ const Projects = props => {
 };
 
 export default styled(Projects)`
-  padding: 2rem 1.5rem 4rem 1.5rem;
+  padding: 2rem;
   .project-cards {
     display: flex;
     flex-wrap: wrap;
-    padding: 1.5rem;
-    .project-card {
-      width: calc(50% - 1rem);
-      margin-right: 1rem;
-      margin-bottom: 1rem;
-      &:nth-child(even) {
-        width: 50%;
-        margin-right: 0;
-      }
-    }
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 2rem;
   }
 `;
