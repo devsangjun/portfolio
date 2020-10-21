@@ -16,6 +16,12 @@ export default createGlobalStyle`
   }
   .section-header {
     font-size: 2em;
+    @media (max-width: 640px) {
+      font-size: 1.8em;
+    }
+    @media (max-width: 480px) {
+      font-size: 1.5em;
+    }
   }
   .shadow {
     box-shadow: 0.125rem 0.125rem 0.5rem rgba(0, 0, 0, 0.2);

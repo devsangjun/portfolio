@@ -97,16 +97,16 @@ export default styled(ProjectCard)`
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     padding-bottom: 0.5rem;
     .project-title {
-      font-size: 1.5em;
+      font-size: 1.3em;
     }
     .header-btm-container {
       display: flex;
       justify-content: space-between;
       .project-subtitle {
-        font-size: 0.9em;
+        font-size: 0.8em;
       }
       .project-date {
-        font-size: 0.9em;
+        font-size: 0.8em;
       }
     }
   }
@@ -135,10 +135,92 @@ export default styled(ProjectCard)`
       width: 100%;
       .project-skill {
         margin-right: 0.5rem;
-        font-size: 0.8em;
+        font-size: 0.7em;
         &:last-child {
           margin-right: 0;
         }
+      }
+    }
+  }
+  @media (max-width: 960px) {
+    width: calc(50% - 0.5rem);
+  }
+  @media (max-width: 640px) {
+    .project-header {
+      .project-title {
+        font-size: 1em;
+      }
+      .header-btm-container {
+        display: flex;
+        flex-direction: column;
+        .project-subtitle {
+          font-size: 0.8em;
+        }
+        .project-date {
+          font-size: 0.8em;
+        }
+      }
+    }
+    .project-body {
+      .project-description {
+        font-size: 0.8em;
+      }
+    }
+    .project-btm-container {
+      .project-skills {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 640px) {
+    width: calc(50% - 0.5rem);
+    .project-header {
+      .project-title {
+        font-size: 1em;
+      }
+      .header-btm-container {
+        display: flex;
+        flex-direction: column;
+        .project-subtitle {
+          font-size: 0.8em;
+        }
+        .project-date {
+          font-size: 0.8em;
+        }
+      }
+    }
+    .project-body {
+      .project-description {
+        font-size: 0.8em;
+      }
+    }
+    .project-btm-container {
+      .project-skills {
+        display: none;
+      }
+    }
+  }
+  @media (max-width: 480px) {
+    width: 100%;
+    .project-header {
+      .project-title {
+        font-size: 1em;
+      }
+      .header-btm-container {
+        display: flex;
+        justify-content: space-between;
+        .project-subtitle {
+          font-size: 0.8em;
+        }
+        .project-date {
+          font-size: 0.8em;
+        }
+      }
+    }
+    .project-body {
+      .project-description {
+        font-size: 0.8em;
       }
     }
   }

@@ -56,7 +56,6 @@ export default styled(Footer)`
       flex-direction: column;
       justify-content: center;
       align-items: center;
-
       > h3 {
         font-size: 2.5em;
       }
@@ -66,6 +65,21 @@ export default styled(Footer)`
         .MuiSvgIcon-root {
           font-size: 1.5em;
           color: white;
+        }
+      }
+    }
+  }
+  @media (max-width: 960px) {
+    height: 15rem;
+    .footer-container {
+      justify-content: center;
+      .footer-img {
+        display: none;
+      }
+      .footer-contact {
+        margin-left: 0;
+        > h3 {
+          font-size: 1.5em;
         }
       }
     }

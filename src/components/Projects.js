@@ -4,24 +4,36 @@ import ProjectCard from "./ProjectCard";
 
 const data = [
   {
-    title: "Binder",
-    summary: "To-do-list App",
-    description: "Create a to-do-list and have it stored locally.",
-    date: "JUL 2019",
-    skills: ["React", "Redux"],
-    codeLink: "https://github.com/ohyeyoye/binder",
-    runLink: "https://ohyeyoye.github.io/binder",
-    color: "#F89BA5",
+    title: "Lockey",
+    summary: "Password Vault",
+    description:
+      "Save your passwords in your web vault with a master password that auto-locks every 3 minutes.",
+    date: "OCT 2020",
+    skills: ["React", "Redux", "Firebase Auth & DB"],
+    runLink: "https://lockey-d41ff.web.app/",
+    color: "#005CE6",
   },
   {
-    title: "AboutTimer",
-    summary: "Multi-timers",
-    description: "Set multiple timers and run them simultaneously.",
-    date: "AUG 2019",
-    skills: ["React", "Redux"],
-    codeLink: "https://github.com/ohyeyoye/about-timer",
-    runLink: "https://ohyeyoye.github.io/about-timer",
-    color: "#8640F8",
+    title: "TL;DR",
+    summary: "Personal Blog",
+    description: "Create a personal Markdown blog online.",
+    date: "JUN 2020",
+    skills: ["React", "Redux", "Node"],
+    codeLink: "https://github.com/ohyeyoye/tldr",
+    serverLink: "https://github.com/ohyeyoye/tldr-server",
+    runLink: "https://ohyeyoye.github.io/tldr",
+    color: "#FF8D38",
+  },
+  {
+    title: "Moogle",
+    summary: "Movie Search Engine",
+    description: 'No more Googling. Just "moogle" movies for a brief synopsis.',
+    date: "MAY 2020",
+    skills: ["React", "Redux", "Node"],
+    codeLink: "https://github.com/ohyeyoye/moogle",
+    serverLink: "https://github.com/ohyeyoye/moogle-server",
+    runLink: "https://ohyeyoye.github.io/moogle",
+    color: "#3F35E2",
   },
   {
     title: "Weather Or Not",
@@ -36,36 +48,24 @@ const data = [
     color: "#55AAFF",
   },
   {
-    title: "Moogle",
-    summary: "Movie Search Engine",
-    description: 'No more Googling. Just "moogle" movies for a brief synopsis.',
-    date: "MAY 2020",
-    skills: ["React", "Redux", "Node"],
-    codeLink: "https://github.com/ohyeyoye/moogle",
-    serverLink: "https://github.com/ohyeyoye/moogle-server",
-    runLink: "https://ohyeyoye.github.io/moogle",
-    color: "#3F35E2",
+    title: "AboutTimer",
+    summary: "Multi-timers",
+    description: "Set multiple timers and run them simultaneously.",
+    date: "AUG 2019",
+    skills: ["React", "Redux"],
+    codeLink: "https://github.com/ohyeyoye/about-timer",
+    runLink: "https://ohyeyoye.github.io/about-timer",
+    color: "#8640F8",
   },
   {
-    title: "TL;DR",
-    summary: "Personal Blog",
-    description: "Create a personal Markdown blog online.",
-    date: "JUN 2020",
-    skills: ["React", "Redux", "Node"],
-    codeLink: "https://github.com/ohyeyoye/tldr",
-    serverLink: "https://github.com/ohyeyoye/tldr-server",
-    runLink: "https://ohyeyoye.github.io/tldr",
-    color: "#FF8D38",
-  },
-  {
-    title: "Lockey",
-    summary: "Password Vault",
-    description:
-      "Save your passwords in your web vault with a master password that auto-locks every 3 minutes.",
-    date: "OCT 2020",
-    skills: ["React", "Redux", "Firebase Auth & DB"],
-    runLink: "https://lockey-d41ff.web.app/",
-    color: "#005CE6",
+    title: "Binder",
+    summary: "To-do-list App",
+    description: "Create a to-do-list and have it stored locally.",
+    date: "JUL 2019",
+    skills: ["React", "Redux"],
+    codeLink: "https://github.com/ohyeyoye/binder",
+    runLink: "https://ohyeyoye.github.io/binder",
+    color: "#F89BA5",
   },
 ];
 
@@ -92,5 +92,11 @@ export default styled(Projects)`
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 2rem;
+  }
+  @media (max-width: 480px) {
+    .project-cards {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 `;

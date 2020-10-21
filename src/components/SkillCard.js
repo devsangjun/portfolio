@@ -45,4 +45,60 @@ export default styled(SkillCard)`
     width: 15rem;
     text-align: center;
   }
+  @media (max-width: 640px) {
+    width: calc(33% - 0.5rem);
+    margin-bottom: 1rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .number-circle-outline {
+      width: 5rem;
+      height: 5rem;
+      .number {
+        font-size: 2.5em;
+        color: #1e8dff;
+      }
+      margin-bottom: 1rem;
+    }
+    .skill-name {
+      color: #555555;
+      font-size: 1.2em;
+      margin-bottom: 1rem;
+    }
+    .skill-description {
+      color: #555555;
+      font-size: 0.8em;
+      font-weight: bold;
+      width: 9rem;
+      text-align: center;
+    }
+  }
+  @media (max-width: 480px) {
+    width: 100%;
+    margin-bottom: 1rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .number-circle-outline {
+      width: 4rem;
+      height: 4rem;
+      .number {
+        font-size: 2em;
+        color: #1e8dff;
+      }
+      margin-bottom: 1rem;
+    }
+    .skill-name {
+      color: #555555;
+      font-size: 1.2em;
+      margin-bottom: 1rem;
+    }
+    .skill-description {
+      color: #555555;
+      font-size: 0.8em;
+      font-weight: bold;
+      width: 15rem;
+      text-align: center;
+    }
+  }
 `;

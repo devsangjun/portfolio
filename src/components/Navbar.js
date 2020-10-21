@@ -47,8 +47,6 @@ export default styled(Navbar)`
       font-size: 1.5em;
       font-weight: bold;
     }
-    .logo-description {
-    }
   }
   .nav-items {
     display: flex;
@@ -66,6 +64,15 @@ export default styled(Navbar)`
           cursor: pointer;
         }
       }
+    }
+  }
+  @media (max-width: 640px) {
+    flex-direction: column;
+    .logo {
+      .logo-description {
+        display: none;
+      }
+      margin-bottom: 0.5rem;
     }
   }
 `;

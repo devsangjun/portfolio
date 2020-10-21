@@ -43,4 +43,14 @@ export default styled(MySkills)`
     justify-content: space-between;
     margin-top: 2rem;
   }
+  @media (max-width: 640px) {
+    height: 22rem;
+  }
+  @media (max-width: 480px) {
+    height: fit-content;
+    .skills {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 `;
