@@ -4,6 +4,16 @@ import ProjectCard from "./ProjectCard";
 
 const data = [
   {
+    title: "SpotLight",
+    summary: "Your Online Diary",
+    description:
+      "Keep your entries online, bookmark them, and search keywords to retrieve some of your precious memories.",
+    date: "OCT 2020",
+    skills: ["React", "Redux", "Firebase Auth & Firestore"],
+    runLink: "https://lockey-d41ff.web.app/",
+    color: "#FFC800",
+  },
+  {
     title: "Lockey",
     summary: "Password Vault",
     description:
@@ -12,17 +22,6 @@ const data = [
     skills: ["React", "Redux", "Firebase Auth & DB"],
     runLink: "https://lockey-d41ff.web.app/",
     color: "#005CE6",
-  },
-  {
-    title: "TL;DR",
-    summary: "Personal Blog",
-    description: "Create a personal Markdown blog online.",
-    date: "JUN 2020",
-    skills: ["React", "Redux", "Node"],
-    codeLink: "https://github.com/ohyeyoye/tldr",
-    serverLink: "https://github.com/ohyeyoye/tldr-server",
-    runLink: "https://ohyeyoye.github.io/tldr",
-    color: "#FF8D38",
   },
   {
     title: "Moogle",
