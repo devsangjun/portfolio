@@ -35,7 +35,7 @@ const data = [
     color: "#3F35E2",
   },
   {
-    title: "Weather Or Not",
+    title: "Weather or Not",
     summary: "Weather App",
     description:
       "Search for weathers in cities and save them to your Favorites.",
