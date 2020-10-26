@@ -10,7 +10,7 @@ const data = [
       "Keep your entries online, bookmark them, and search keywords to retrieve some of your precious memories.",
     date: "OCT 2020",
     skills: ["React", "Redux", "Firebase Auth & Firestore"],
-    runLink: "https://lockey-d41ff.web.app/",
+    runLink: "https://spot-light-66918.web.app",
     color: "#FFC800",
   },
   {
@@ -20,7 +20,7 @@ const data = [
       "Save your passwords in your web vault with a master password that auto-locks every 3 minutes.",
     date: "OCT 2020",
     skills: ["React", "Redux", "Firebase Auth & DB"],
-    runLink: "https://lockey-d41ff.web.app/",
+    runLink: "https://lockey-d41ff.web.app",
     color: "#005CE6",
   },
   {
